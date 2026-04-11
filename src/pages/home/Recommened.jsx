@@ -14,14 +14,13 @@ import { useFetchAllBooksQuery } from '../../redux/features/books/booksApi';
 
 
 const Recommened = () => {
-//    const [books,setBooks] = useState([]);
-      
-//        useEffect( ()=>{
-//            fetch("books.json")
-//                .then(res=> res.json())
-//                .then((data) => setBooks(data))
-//        })
-
+   
+    // const [books,setBooks] = useState([]);
+    //     useEffect( ()=> {
+    //         fetch("books.json")
+    //             .then(res =>res.json())
+    //             .then((data) => setBooks(data))
+    //     },[])
     const {data: books = []} = useFetchAllBooksQuery();
   return (
     <div className='py-16'>

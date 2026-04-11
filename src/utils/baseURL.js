@@ -1,5 +1,5 @@
 const getBaseUrl = () => {
-    return "https://inventrabook-backend.onrender.com/"
+    return "http://localhost:5000"
 }
 
 export default getBaseUrl;
