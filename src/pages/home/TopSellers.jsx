@@ -21,7 +21,7 @@ const TopSellers = () => {
     const [selectedCategory, setSelectedCategory] = useState("Choose a genre");
 
     useEffect( ()=>{
-        fetch("https://inventrabook-backend.onrender.com/")
+        fetch("books.json")
             .then(res=> res.json())
             .then((data) => setBooks(data))
     })
